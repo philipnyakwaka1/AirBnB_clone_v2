@@ -46,6 +46,8 @@ class FileStorage:
             for key in keys_to_delete:
                 del FileStorage.__objects[key]
             self.save()
+        else:
+            pass
 
     def reload(self):
         """Loads storage dictionary from file"""
