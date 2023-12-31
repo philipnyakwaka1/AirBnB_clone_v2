@@ -31,7 +31,7 @@ class FileStorage:
                 temp[key] = val.to_dict()
             json.dump(temp, f)
 
-    def delete(self, obj=None):
+    def delete(self, obj):
         """
         to delete obj from __objects if it’s inside
         - if obj is equal to None, the method should not do anything
@@ -46,7 +46,7 @@ class FileStorage:
             for key in keys_to_delete:
                 del FileStorage.__objects[key]
             self.save()
-        else:
+        elif obj is None:
             pass
 
     def reload(self):
