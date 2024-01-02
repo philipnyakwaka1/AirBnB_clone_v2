@@ -36,9 +36,8 @@ class FileStorage:
         to delete obj from __objects if it’s inside
         - if obj is equal to None, the method should not do anything
         """
-        print(f'parameter obj is of type: {type(obj)} and has an id: {obj.id}')
         if obj:
-            FileStorage.reload(self)
+            self.reload()
             keys_to_delete = []
             for key, val in FileStorage.__objects.items():
                 if val.id == obj.id:

@@ -1,3 +1,3 @@
-s = "Hello"
-l = s.split(' ')
-print(l)
+#!/usr/bin/python3
+classes = ['User', 'State', 'City', 'Amenity', 'Place', 'Review']
+print('State' in classes)
