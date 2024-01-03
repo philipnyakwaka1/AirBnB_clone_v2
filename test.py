@@ -1,2 +1,3 @@
-import os
-print(os.getenv('MY_VAR'))
+my_dict = {'name': 'Philip', 'age': 25}
+if 'name' in my_dict and 'age' in my_dict:
+    print('Both Present')
