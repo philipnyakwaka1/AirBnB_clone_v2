@@ -1,4 +1,8 @@
 #!/usr/bin/python3
 
-text = 'Hello_World'
-print(text.replace('_', ' '))
+text = '8'
+try:
+    int(text)
+    print(int(text))
+except Exception as e:
+    pass
