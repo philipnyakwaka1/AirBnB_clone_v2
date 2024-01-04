@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-classes = ['User', 'State', 'City', 'Amenity', 'Place', 'Review']
-print('State' in classes)
+my_dict = {'name': 'Philip', 'age': 25}
+print(list(my_dict.values()))
