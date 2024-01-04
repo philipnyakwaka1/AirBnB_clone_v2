@@ -12,7 +12,6 @@ from models.place import Place
 from models.user import User
 from models.review import Review
 from models.state import State
-import MySQLdb
 
 
 class DBStorage:
@@ -80,3 +79,8 @@ class DBStorage:
         new_session = sessionmaker(bind=self.__engine, expire_on_commit=False)
         Session = scoped_session(new_session)
         self.__session = Session()
+
+    def close(self):
+        """***closes***"""
+
+        self.__session.close()
